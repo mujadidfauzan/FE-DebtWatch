@@ -13,24 +13,18 @@ const Index = () => {
 
   const handleKeyPress = (key: string) => {
     if (key === "C") {
-      // Clear
       setAmount("0");
     } else if (key === "⌫") {
-      // Backspace
       setAmount(prev => prev.length > 1 ? prev.slice(0, -1) : "0");
     } else if (key === "enter") {
-      // Enter/Submit
       console.log("Submit amount:", amount);
     } else if (["÷", "×", "−", "+"].includes(key)) {
-      // Operation keys - not handling operations in this simple version
       console.log("Operation:", key);
     } else {
-      // Numbers and decimal
       setAmount(prev => {
         if (prev === "0" && key !== ".") {
           return key;
         } else {
-          // Prevent multiple decimal points
           if (key === "." && prev.includes(".")) {
             return prev;
           }
@@ -43,7 +37,7 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-app-blue to-blue-600">
       <div className="p-4 flex-1 flex flex-col">
-        {/* User Profile */}
+        {/* Profil User, belum di develop masih dummy */}
         <div className="mb-6">
           <UserProfile />
         </div>
@@ -88,13 +82,13 @@ const Index = () => {
           />
         </div>
 
-        {/* Calculator */}
+        {/* Kalkulator */}
         <div className="mt-auto">
           <Calculator onKeyPress={handleKeyPress} />
         </div>
       </div>
 
-      {/* Navigation Bar */}
+      {/* Navigation bar, sama ini juga masih dummy */}
       <NavigationBar />
     </div>
   );
