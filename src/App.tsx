@@ -11,6 +11,14 @@ import SignupPage from "./pages/Signup";
 import ForgotPasswordPage from "./pages/ForgotPassword";
 import NewPasswordPage from "./pages/NewPassword";
 import LaunchPage from "./pages/Launch";
+import UsiaPage from "./pages/Question_Usia";
+import JenisKelaminPage from "./pages/Question_JenisKelamin";
+import TanggunganPage from "./pages/Question_Tanggungan";
+import PekerjaanPage from "./pages/Question_Pekerjaan";
+import AssetPage from "./pages/Question_Asset";
+import UtangPage from "./pages/Question_Utang";
+import LoadingPage from "./pages/Loading";
+import HomePage from "./pages/Home";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,6 +35,17 @@ const App = () => (
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/new-password" element={<NewPasswordPage />} />
           <Route path="/input" element={<Index />} />
+          <Route path="/usia" element={<UsiaPage />} />
+          <Route path="/jk" element={<JenisKelaminPage />} />
+          <Route path="/tanggungan" element={<TanggunganPage />} />
+          <Route path="/pekerjaan" element={<PekerjaanPage />} />
+          <Route path="/asset" element={<AssetPage />} />
+          <Route path="/utang" element={<UtangPage />} />
+          <Route path="/load" element={<LoadingPage />} />
+          <Route path="/home" element={<HomePage />} />
+          
+          
+
           {/* Route kustom tambahin kesini ya */}
           <Route path="*" element={<NotFound />} />
         </Routes>

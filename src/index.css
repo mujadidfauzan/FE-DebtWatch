@@ -86,3 +86,27 @@
 .calc-button-dark {
   @apply bg-black text-white hover:bg-opacity-80;
 }
+
+/* styles/tailwind.css */
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+.launch-screen {
+  background-color: #1e40af; 
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 20px; 
+}

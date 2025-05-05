@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import "../LaunchScreen.css"; // pastikan file CSS ini ada dan sesuai
 
 const Launch: React.FC = () => {
   const navigate = useNavigate();
