@@ -10,7 +10,7 @@ import LoginPage from "./pages/Login";
 import SignupPage from "./pages/Signup";
 import ForgotPasswordPage from "./pages/ForgotPassword";
 import NewPasswordPage from "./pages/NewPassword";
-
+import LaunchPage from "./pages/Launch";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -20,12 +20,13 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<LaunchPage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/new-password" element={<NewPasswordPage />} />
+          <Route path="/input" element={<Index />} />
           {/* Route kustom tambahin kesini ya */}
           <Route path="*" element={<NotFound />} />
         </Routes>
