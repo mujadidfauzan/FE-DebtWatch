@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
@@ -35,20 +35,25 @@ const LoginPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full space-y-3">
+        <div className="w-full space-y-3 mb-6">
           <Button className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-full">
             Log In
           </Button>
-           <button className="text-xs text-gray-300 hover:text-white mb-3 w-full text-center">
+           <button 
+            className="text-xs text-gray-300 hover:text-white w-full text-center"
+            onClick={() => navigate('/forgot-password')}
+           >
             Forgot Password?
           </button>
-          <Button
-            variant="outline"
-            className="w-full bg-yellow-100 hover:bg-yellow-200 border-none text-yellow-900 font-semibold py-3 rounded-full"
-            onClick={() => navigate('/signup')}
-          >
-            Sign Up
-          </Button>
+        </div>
+
+        <div className="text-center">
+          <p className="text-xs text-gray-300">
+            Don't have an account? 
+            <Link to="/signup" className="font-semibold text-white hover:underline ml-1">
+              Sign Up
+            </Link>
+          </p>
         </div>
       </div>
     </div>

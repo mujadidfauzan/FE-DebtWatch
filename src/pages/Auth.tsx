@@ -33,7 +33,10 @@ const AuthPage: React.FC = () => {
           </Button>
         </div>
 
-        <button className="mt-6 text-sm text-gray-500 hover:text-gray-700">
+        <button 
+          className="mt-6 text-sm text-gray-500 hover:text-gray-700"
+          onClick={() => navigate('/forgot-password')}
+        >
           Forgot Password?
         </button>
       </div>

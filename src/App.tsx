@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 import AuthPage from "./pages/Auth";
 import LoginPage from "./pages/Login";
 import SignupPage from "./pages/Signup";
+import ForgotPasswordPage from "./pages/ForgotPassword";
+import NewPasswordPage from "./pages/NewPassword";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/new-password" element={<NewPasswordPage />} />
           {/* Route kustom tambahin kesini ya */}
           <Route path="*" element={<NotFound />} />
         </Routes>
