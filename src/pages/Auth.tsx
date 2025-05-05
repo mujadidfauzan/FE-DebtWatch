@@ -13,7 +13,7 @@ const AuthPage: React.FC = () => {
     <div
       className="relative flex flex-col items-center justify-end min-h-screen bg-cover bg-top"
       style={{ backgroundImage: "url('../image.png')",
-               backgroundSize: "300px 350px", 
+               backgroundSize: "300px 340px", 
               backgroundPosition: "top", 
               backgroundRepeat: "no-repeat",
                backgroundAttachment: "fixed"
