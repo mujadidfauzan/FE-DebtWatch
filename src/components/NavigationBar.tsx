@@ -29,13 +29,16 @@ const NavigationBar = () => {
         </button>
       </Link>
 
-      <Link to="/detail">
+      <Link to="/input">
         <button
-          className={`flex flex-col items-center ${location.pathname === "/detail" ? "bg-app-yellow rounded-full p-3" : ""}`}
+          className={`flex flex-col items-center ${location.pathname === "/input" ? "bg-app-yellow rounded-full p-3" : ""}`}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-            <path fillRule="evenodd" d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm4.5 7.5a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0v-2.25a.75.75 0 01.75-.75zm3.75-1.5a.75.75 0 00-1.5 0v4.5a.75.75 0 001.5 0V12zm2.25-3a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0V9.75A.75.75 0 0113.5 9zm3.75-1.5a.75.75 0 00-1.5 0v9a.75.75 0 001.5 0v-9z" clipRule="evenodd" />
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+  <path d="M4 20h4l10.5-10.5a2.828 2.828 0 10-4-4L4 16v4z" />
+  <path d="M13.5 6.5l4 4" />
+</svg>
+
+
         </button>
       </Link>
 
