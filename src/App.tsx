@@ -19,6 +19,8 @@ import AssetPage from "./pages/Question_Asset";
 import UtangPage from "./pages/Question_Utang";
 import LoadingPage from "./pages/Loading";
 import HomePage from "./pages/Home";
+import DetailPage from "./pages/DetailPage";
+import ChatbotPage from "./pages/ChatbotPage";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -43,7 +45,8 @@ const App = () => (
           <Route path="/utang" element={<UtangPage />} />
           <Route path="/load" element={<LoadingPage />} />
           <Route path="/home" element={<HomePage />} />
-          
+          <Route path="/detail" element={<DetailPage />} />
+          <Route path="/chatbot" element={<ChatbotPage />} />
           
 
           {/* Route kustom tambahin kesini ya */}
