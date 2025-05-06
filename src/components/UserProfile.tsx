@@ -1,8 +1,9 @@
 
 import React from "react";
-
+import { Link } from "react-router-dom";
 const UserProfile = () => {
   return (
+    <Link to = "/detail">
     <div className="flex items-center gap-2 bg-black bg-opacity-20 rounded-full px-3 py-1.5 w-fit">
       <div className="w-6 h-6 rounded-full bg-black flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-4 h-4">
@@ -11,6 +12,7 @@ const UserProfile = () => {
       </div>
       <span className="text-white font-semibold">JohnDoe</span>
     </div>
+    </Link>
   );
 };
 
