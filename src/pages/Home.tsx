@@ -77,6 +77,7 @@ export default function Dashboard() {
           </div>
 
           <div className="space-y-4 mt-4 pb-24">
+          <p className="text-md italic text-left text-blue-600">Detail</p> 
             <TransactionItem
               icon="💼"
               title="Salary"
@@ -103,7 +104,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Navbar selalu di paling atas */}
+      {/* Navbar */}
       <div className="fixed bottom-0 left-0 right-0 z-20">
         <NavigationBar />
       </div>
